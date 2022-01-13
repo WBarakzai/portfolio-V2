@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../logo/logo-16x16.png"
+    />
+    <title>resume</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="../styles/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <!-- css styles -->
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/resumeStyle.css">
+</head>
+<body class="hide-scroll">
+   <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-logo">
+          <!-- nav bar button -->
+          <button type="button" class="open-btn" id="open-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- nav bar logo -->
+          <a href="../index.html" class="fancy-nav-link">
+            <!-- front image -->
+            <div class="flip nav-img1" id="flip-img1"></div>
+            <!-- back image -->
+            <div class="flip nav-img2" id="flip-img2"></div>
+          </a>
+        </div>
+        <!-- links -->
+        <ul class="nav-links">
+          <li><a href="../pages/projects.html">projects</a></li>
+          <li><a href="../pages/resume.html">resume</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- sidebar navigation for smaller screens -->
+    <aside class="sidebar" id="sidebar">
+      <div class="side-center">
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li><a href="../pages/projects.html">projects</a></li>
+          <li><a href="../pages/resume.html">resume</a></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- End of Sidebar -->
+
+    <!-- Header -->
+    <header class="section-center resume-header">
+      <!-- title -->
+      <div class="title project-header">
+        <h2>Resume</h2>
+        <div class="title-underline"></div>
+      </div>
+      <!-- END of title -->
+      <a href="../resources/resume.pdf" class="btn resume-download-btn" download>Download</a>
+    </header>
+    <!-- End of Header -->
+
+  
+
+    <!-- Start of PDF View -->
+    <section>
+        <div class="section-center resume-center">
+     <object data="../resources/Resume-3.pdf"  class="resume">
+    <embed src="../resources/resume.pdf" class="resume"/>
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./resume.html" download>View the PDF</a>.</p>
+    </embed></object>
+    
+</div>
+   
+    </section>
+<script src="../js/app.js"></script>
+</body>
+</html>
