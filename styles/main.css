@@ -435,7 +435,7 @@ Skills
   padding-top: 6rem;
   padding-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 1.7rem;
   justify-content: center;
   align-items: center;
@@ -445,8 +445,8 @@ Skills
   justify-self: center;
   padding-top: 0.2rem;
   background: var(--gray-100);
-  width: 13rem;
-  height: 14rem;
+  width: 17rem;
+  height: 13rem;
   overflow: hidden;
   box-shadow: var(--shadow-1);
   border-radius: var(--borderRadius);
@@ -498,7 +498,18 @@ Skills
   padding-right: 2rem;
   color: var(--gray-700);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 534px) {
+  .skill {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .skill-card {
+    width: 14rem;
+    height: 13rem;
+  }
+}
+@media screen and (min-width: 970px) {
   .skill {
     grid-template-columns: repeat(3, 1fr);
   }

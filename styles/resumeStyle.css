@@ -13,11 +13,13 @@ Resume page
 }
 
 .resume-center {
-  height: 100vh;
-  object-fit: cover;
+  height: 100%;
 }
 .resume {
+  display: block;
   width: 90%;
-  height: 100vh;
+  height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  margin: 0 auto;
 }
