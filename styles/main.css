@@ -146,6 +146,7 @@ ul {
 .img {
   width: 100%;
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 /* buttons */
@@ -239,6 +240,7 @@ navbar
   margin-left: 2rem;
 }
 .flip {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 1s linear;
 }

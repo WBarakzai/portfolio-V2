@@ -14,8 +14,10 @@ Resume page
 
 .resume-center {
   height: 100vh;
+  object-fit: cover;
 }
 .resume {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
