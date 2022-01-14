@@ -359,6 +359,7 @@ navbar and sidbar changes upon screen size
   }
   .navbar {
     background: transparent;
+    width: auto;
   }
   .nav-center {
     background: transparent;
