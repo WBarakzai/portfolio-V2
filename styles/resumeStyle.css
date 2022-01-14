@@ -17,7 +17,7 @@ Resume page
   object-fit: cover;
 }
 .resume {
-  width: 100vw;
+  width: 90%;
   height: 100vh;
   object-fit: cover;
 }
