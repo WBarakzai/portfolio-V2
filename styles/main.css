@@ -401,16 +401,73 @@ Header
 .header {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+}
+/* text fall animation style */
+.fall {
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.upper-case {
+  text-transform: uppercase;
+}
+.fall span {
+  display: inline-block;
+  font-size: 15vw;
+  letter-spacing: 1vw;
+  color: var(--primary-500);
+  font-weight: 600;
+  text-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform: translateY(-100vh);
+  -webkit-animation: fallStyle 4.9s forwards;
+  animation: fallStyle 4.9s forwards;
+}
+@-webkit-keyframes fallStyle {
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fallStyle {
+  100% {
+    transform: translateY(0);
+  }
+}
+.fall span:nth-child(2) {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.fall span:nth-child(3) {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.fall span:nth-child(4) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.fall span:nth-child(5) {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+.fall span:nth-child(6) {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+.fall span:nth-child(7) {
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
+}
+.fall span:nth-child(8) {
+  -webkit-animation-delay: 4.9s;
+  animation-delay: 4.9s;
 }
 
-.header h1 {
-  font-weight: 600;
-  color: var(--primary-500);
-  font-size: 17vw;
-}
+/* End of text fall animation  */
+
 .arrow-down {
   position: fixed;
   bottom: 0;
